@@ -37,7 +37,7 @@ export const ContactProjet = () => {
                     <div className="mt-8 lg:mt-0">
                         <div className="flex flex-col space-y-3 sm:space-y-0 sm:flex-row sm:-mx-2">
 
-                            <button className="px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-green-600 rounded-lg focus:ring focus:ring-green-300 focus:ring-opacity-80 fo sm:mx-2 hover:bg-green-500 focus:outline-none focus:bg-green-500">
+                            <button className="px-6 py-3 text-sm tracking-wide text-white capitalize transition-colors duration-300 transform bg-teal-600 rounded-lg focus:ring focus:ring-green-300 focus:ring-opacity-80 fo sm:mx-2 hover:bg-green-500 focus:outline-none focus:bg-green-500">
                                 Contactez-nous →
                             </button>
                         </div>
