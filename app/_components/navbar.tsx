@@ -3,7 +3,9 @@
 import { Menu, X } from 'lucide-react';
 import React, { useEffect, useState } from 'react'
 
-export const Navbar = () => {
+type NavbarVariant = "light"|"dark"
+
+export const Navbar: React.FC<{variant?: NavbarVariant}> = ({variant = "light"}) => {
     const [isScrolled, setIsScrolled] = useState(false);
     const [isMenuOpen, setIsMenuOpen] = useState(false);
     const [state, setState] = useState(false)
@@ -28,7 +30,7 @@ export const Navbar = () => {
     return (
     <>
         {/* Navbar */}
-      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg' : 'bg-transparent'}`}>
+      <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? variant === "light" ? 'bg-white shadow-lg': 'bg-slate-800 shadow-lg' : 'bg-transparent'}`}>
         <div className="relative items-center py-3 px-4 mx-auto container sm:px-8 md:flex md:space-x-6">
                 <div className="flex justify-between">
                     <a href="javascript:void(0)">
@@ -60,14 +62,14 @@ export const Navbar = () => {
                     <div className="items-center space-y-5 md:flex md:space-x-6 md:space-y-0 md:ml-12">
                         {
                             navigation.map((item, idx) => (
-                                <li className="text-gray-500 hover:text-slate-800 font-semibold" key={idx}>
+                                <li className={`text-gray-500 ${variant === 'light' ? "hover:text-slate-800": "hover:text-slate-300"} font-semibold`} key={idx}>
                                     <a href={item.path}>{item.title}</a>
                                 </li>
                             ))
                         }
                     </div>
                     <li className="order-2 py-5 md:py-0">
-                        <a href="/contact" className="py-2 px-5 rounded-lg font-medium text-white text-center bg-slate-800 hover:bg-slate-700 active:bg-slate-900 duration-150 block md:py-3 md:inline">
+                        <a href="/contact" className={`py-2 px-5 rounded-lg font-medium text-center ${variant === 'light' ? "text-white bg-slate-800 hover:bg-slate-700 active:bg-slate-900": "text-slate-800 bg-slate-200 hover:bg-slate-100 active:bg-slate-300"} duration-150 block md:py-3 md:inline`}>
                             Nous contacter
                         </a>
                     </li>

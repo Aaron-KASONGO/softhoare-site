@@ -32,7 +32,7 @@ const budgets = [
 const Contact = () => {
   return (
     <div className='min-h-screen bg-white'>
-        <Navbar />
+        <Navbar variant='dark' />
 
         <div className="container space-y-8 mx-auto px-4 sm:px-6 lg:px-8 pt-24">
 
