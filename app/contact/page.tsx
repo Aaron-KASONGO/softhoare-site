@@ -31,7 +31,7 @@ const budgets = [
 
 const Contact = () => {
   return (
-    <div className='min-h-screen bg-white'>
+    <div className='min-h-screen bg-slate-800'>
         <Navbar variant='dark' />
 
         <div className="container space-y-8 mx-auto px-4 sm:px-6 lg:px-8 pt-24">
@@ -40,8 +40,8 @@ const Contact = () => {
                 <h3 className="text-teal-600 font-semibold">
                     Contact
                 </h3>
-                <h2 className="text-slate-800 font-semibold text-2xl md:text-4xl md:leading-tight">Contactez-nous</h2>
-                <p className="mt-1 text-neutral-500">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+                <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Contactez-nous</h2>
+                <p className="mt-1 text-gray-500">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
             </div>
 
             {/* <!-- Section Aide --> */}
@@ -57,13 +57,13 @@ const Contact = () => {
 
         </div>
 
-        <div className='bg-slate-800'>
+        <div className='bg-white'>
 
             <div className="container space-y-8 mx-auto px-4 sm:px-6 lg:px-8 pt-20 pb-1">
                 {/* <!-- Étapes --> */}
                 <div className="grid md:grid-cols-3 gap-8 mb-20">
                     <div className="pl-6">
-                        <h3 className="text-2xl text-white font-bold mb-4">What will be next step?</h3>
+                        <h3 className="text-2xl text-slate-800 font-bold mb-4">What will be next step?</h3>
                         <p className="text-gray-500 mb-6">You are one step closer to build your perfect product.</p>
                         
                         {/* <div className="space-y-8">
@@ -86,7 +86,7 @@ const Contact = () => {
                     </div>
 
                     {/* <!-- Formulaire --> */}
-                    <div className="md:col-span-2 bg-white p-8 rounded-xl text-slate-800">
+                    <div className="md:col-span-2 bg-slate-800 p-8 rounded-xl text-white">
                         <p className="text-lg mb-6">Write us a few words about your project and we'll prepare a proposal for you within 24 hours.</p>
                         
                         <form>
@@ -94,12 +94,12 @@ const Contact = () => {
                                 {/* Grid */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-firstname-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Nom</label>
+                                        <label htmlFor="hs-firstname-hire-us-1" className="block mb-2 text-sm text-white font-medium">Nom</label>
                                         <input type="text" required placeholder='ex: KAWEJ' name="nom" id="hs-firstname-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="hs-lastname-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Prénom</label>
+                                        <label htmlFor="hs-lastname-hire-us-1" className="block mb-2 text-sm text-white font-medium">Prénom</label>
                                         <input type="text" required placeholder='ex: Nathan' name="prenom" id="hs-lastname-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                 </div>
@@ -107,11 +107,11 @@ const Contact = () => {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Work Email</label>
+                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-white font-medium">Work Email</label>
                                         <input type="email" required placeholder='ex: nathan.kawej@gmail.com' name="email" id="hs-work-email-hire-us-1" autoComplete="email" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                     <div>
-                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Téléphone</label>
+                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-white font-medium">Téléphone</label>
                                         <input type="tel" required placeholder='ex: 099 452 4...' name="hs-work-email-hire-us-1" id="hs-work-email-hire-us-1" autoComplete='tel' className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                 </div>
@@ -120,12 +120,12 @@ const Contact = () => {
                                 {/* Grid */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-company-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Nom entreprise</label>
+                                        <label htmlFor="hs-company-hire-us-1" className="block mb-2 text-sm text-white font-medium">Nom entreprise</label>
                                         <input type="text" placeholder='ex: Mc Donald' name="hs-company-hire-us-1" id="hs-company-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="hs-company-website-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Votre budget</label>
+                                        <label htmlFor="hs-company-website-hire-us-1" className="block mb-2 text-sm text-white font-medium">Votre budget</label>
                                         <select required className="py-2.5 px-4 pe-9 block border-2 w-full border-gray-200 rounded-lg text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none">
                                             <option selected>Chosissez un bugdet</option>
                                             {
