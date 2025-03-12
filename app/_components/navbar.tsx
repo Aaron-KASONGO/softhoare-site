@@ -35,9 +35,9 @@ export const Navbar: React.FC<{variant?: NavbarVariant}> = ({variant = "light"})
                 <div className="flex justify-between">
                     <a href="javascript:void(0)">
                         <img
-                            src="https://www.floatui.com/logo.svg"
-                            width={120}
-                            height={50}
+                            src={(isScrolled) ? "logos/logo_blue.png": variant === "light"? "logos/logo_blue.png": "logos/logo_blanc.png"}
+                            width={50}
+                            // height={50}
                             alt="Float UI logo"
                         />
                     </a>
