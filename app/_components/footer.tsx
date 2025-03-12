@@ -22,15 +22,14 @@ export const Footer = () => {
                     </div>
 
                     <p className="mt-6 max-w-md text-center leading-relaxed text-gray-500 sm:max-w-xs sm:text-left">
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Incidunt consequuntur amet culpa
-                    cum itaque neque.
+                    Nous mettons notre expertise au service de vos projets pour vous offrir des solutions logicielles innovantes et pérennes.
                     </p>
 
                     <ul className="mt-8 flex justify-center gap-6 sm:justify-start md:gap-8 text-sm text-gray-400">
                         <li>
                         <a
                             className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end hover:text-gray-300"
-                            href="mailto:john@doe.com"
+                            href="mailto:info@softhoare.com"
                         >
                             <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -47,14 +46,14 @@ export const Footer = () => {
                             />
                             </svg>
 
-                            <span className="flex-1">john@doe.com</span>
+                            <span className="flex-1">info@softhoare.com</span>
                         </a>
                         </li>
 
                         <li>
                         <a
                             className="flex items-center justify-center gap-1.5 ltr:sm:justify-start rtl:sm:justify-end hover:text-gray-300"
-                            href="tel:0123456789"
+                            href="tel:+243890315001"
                         >
                             <svg
                             xmlns="http://www.w3.org/2000/svg"
@@ -71,7 +70,7 @@ export const Footer = () => {
                             />
                             </svg>
 
-                            <span className="flex-1">0123456789</span>
+                            <span className="flex-1">+243890315001</span>
                         </a>
                         </li>
 
