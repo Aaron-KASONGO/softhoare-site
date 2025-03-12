@@ -7,11 +7,11 @@ export const Testimonial = () => {
             <div className="container mx-auto">
 
                 <div className="max-w-3xl mb-10 lg:mb-14">
-                    <h3 className="text-green-600 font-semibold">
-                        Features
+                    <h3 className="text-teal-600 font-semibold">
+                        Commentaires
                     </h3>
-                    <h2 className="text-slate-800 font-semibold text-2xl md:text-4xl md:leading-tight">Our approach</h2>
-                    <p className="mt-1 text-neutral-500">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+                    <h2 className="text-slate-800 font-semibold text-2xl md:text-4xl md:leading-tight">Nos commentaires</h2>
+                    <p className="mt-1 text-neutral-500">Découvrez ce que nos clients disent de nous : des témoignages qui témoignent de notre engagement, de notre expertise et de l'impact positif de nos solutions sur leurs projets.</p>
                 </div>
 
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">

@@ -22,7 +22,7 @@ export const HeroSection = () => {
                             Nous sommes la solution
                         </h1>
                         <h2 className="text-4xl text-gray-800 font-extrabold md:text-5xl">
-                        Nous transofrmons votre idée en solutions numériques sur mesure.
+                        Vos idées en solutions numériques sur mesure.
                         </h2>
                         <p>
                         De l'idée à la réalisation, nous mettons notre expertise au service de vos projets pour vous offrir des solutions logicielles innovantes et pérennes.
