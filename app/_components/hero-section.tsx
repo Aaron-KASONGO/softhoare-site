@@ -41,7 +41,7 @@ export const HeroSection = () => {
                     </div>
                     <div className="flex-none mt-14 md:mt-0 md:max-w-xl">
                         <img
-                            src="https://images.unsplash.com/photo-1573164713619-24c711fe7878?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1738&q=80"
+                            src="https://images.unsplash.com/photo-1739298061740-5ed03045b280?q=80&w=1470&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
                             className=" md:rounded-tl-[108px]"
                             alt=""
                         />

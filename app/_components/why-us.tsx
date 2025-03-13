@@ -20,7 +20,7 @@ export const WhyUs = () => {
             {/* Grid */}
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 lg:items-center">
             <div className="">
-                <img className="w-full object-cover rounded-xl h-[30rem]" src="https://images.unsplash.com/photo-1587614203976-365c74645e83?q=80&w=480&h=600&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Features Image" />
+                <img className="w-full object-cover rounded-xl h-[30rem]" src="https://images.pexels.com/photos/5922530/pexels-photo-5922530.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Features Image" />
             </div>
             {/* End Col */}
 
