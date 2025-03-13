@@ -29,6 +29,15 @@ const projets = [
         image: "/projets_img/whabitout.png",
         lien: "#",
         anne: 2024
+    },
+    {
+        titre: "Maison safina",
+        type: "Gestion de salles",
+        techno: ["React js", "Supabase", "Google"],
+        description: "Safina est une maison de formation culturelle formé autour du jeune avec une culture ouverte, riche et créative.",
+        image: "/projets_img/safina.org.png",
+        lien: "#",
+        anne: 2024
     }
 ]
 
