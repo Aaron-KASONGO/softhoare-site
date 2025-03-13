@@ -2,29 +2,29 @@ import React from 'react'
 
 const projets = [
     {
-        titre: "Application Fitness",
+        titre: "Kilunga Business",
+        type: "Immobilier web",
+        techno: ["Next js", "Neon", "Postgresql"],
+        description: "Kilunga business est une agence immobilière avec une grande expérience de l'immobilier et un service de confiance qui a fait ses preuves.",
+        image: "/projets_img/kilungabusiness.com.png",
+        lien: "https://kilungabusiness.com",
+        anne: 2024
+    },
+    {
+        titre: "Legent",
         type: "Mobile IOS/Android",
-        techno: ["React Native", "Firebase", "Figma"],
-        description: "Découvrez nos réalisations, des projets innovants et sur mesure qui témoignent de notre expertise et de notre capacité à transformer",
-        image: "https://i.pinimg.com/736x/59/e7/01/59e7019e468dad02b305f9e3a292ba02.jpg",
-        lien: "#",
+        techno: ["React js", "Supabaise", "PWA"],
+        description: "Legent facilite le partage de profils entièrement personnalisés contenant des liens, des photos, des informations de contact et bien plus encore.",
+        image: "/projets_img/legent.me.png",
+        lien: "https://legent.me",
         anne: 2024
     },
     {
-        titre: "Application SaaS",
-        type: "Application web",
-        techno: ["React", "Node.js", "MongoDB"],
-        description: "Découvrez nos réalisations, des projets innovants et sur mesure qui témoignent de notre expertise et de notre capacité à transformer",
-        image: "https://i.pinimg.com/736x/f2/15/e1/f215e1a79b9bd322c71520fa65ce59a6.jpg",
-        lien: "#",
-        anne: 2024
-    },
-    {
-        titre: "Shop Modern",
-        type: "E-commerce",
-        techno: ["Next.js", "Supabase"],
-        description: "Découvrez nos réalisations, des projets innovants et sur mesure qui témoignent de notre expertise et de notre capacité à transformer",
-        image: "https://i.pinimg.com/736x/66/cd/5f/66cd5fb45ce4f57e179c67dbd9aabf03.jpg",
+        titre: "Whabitou",
+        type: "Mobile Immobilier",
+        techno: ["Next.js", "Neon", "API"],
+        description: "Whabitout est une plateforme d'exposition et de gestion de biens immobiliers. Les utilisateurs peuvent consulter les différentes annonces",
+        image: "/projets_img/whabitout.png",
         lien: "#",
         anne: 2024
     }

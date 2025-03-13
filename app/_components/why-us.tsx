@@ -29,7 +29,7 @@ export const WhyUs = () => {
                 {/* Heading */}
                 <div className="mb-4">
                 <h3 className="text-teal-400 text-xs font-medium uppercase">
-                    Steps
+                    Processus
                 </h3>
                 </div>
                 {/* End Heading */}
