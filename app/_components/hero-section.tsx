@@ -15,7 +15,7 @@ export const HeroSection = () => {
   return (
     <>
             
-            <section className="py-36">
+            <section className="py-28">
                 <div className="container mx-auto text-gray-600 gap-x-12 items-center justify-between overflow-hidden md:flex md:px-8">
                     <div className="flex-none space-y-5 px-4 sm:max-w-lg md:px-0 lg:max-w-xl">
                         <h1 className="text-sm text-teal-600 font-medium">
