@@ -15,7 +15,7 @@ const Projet = () => {
                     Projet
                 </h3>
                 <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Nos réalisations</h2>
-                <p className="mt-1 text-gray-500">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+                <p className="mt-1 text-gray-500">Découvrez nos réalisations, des projets innovants et sur mesure qui témoignent de notre expertise et de notre capacité à transformer vos idées en solutions concrètes et performantes.</p>
             </div>
 
             {/* <!-- Section Aide --> */}
