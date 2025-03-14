@@ -127,9 +127,9 @@ const Contact = () => {
                                     <div>
                                         <label htmlFor="hs-company-website-hire-us-1" className="block mb-2 text-sm text-white font-medium">Votre budget</label>
                                         <select required className="py-2.5 px-4 pe-9 block border-2 w-full border-gray-200 rounded-lg text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none">
-                                            <option selected>Chosissez un bugdet</option>
+                                            <option  className='text-black'>Chosissez un bugdet</option>
                                             {
-                                                budgets.map((item) => (<option value={item.id} key={item.id}>{item.title}</option>))
+                                                budgets.map((item) => (<option value={item.id} key={item.id} className='text-black'>{item.title}</option>))
                                             }
                                         </select>
                                     </div>
@@ -137,7 +137,7 @@ const Contact = () => {
                                 {/* End Grid */}
 
                                 <div>
-                                    <label htmlFor="hs-about-hire-us-1" className="block mb-2 text-sm text-gray-700 font-medium">Details</label>
+                                    <label htmlFor="hs-about-hire-us-1" className="block mb-2 text-sm text-white font-medium">Details</label>
                                     <textarea id="hs-about-hire-us-1" placeholder='Parlez nous de votre projet...' name="hs-about-hire-us-1" rows={4} className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none"></textarea>
                                 </div>
 
