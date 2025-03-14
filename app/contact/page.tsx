@@ -1,6 +1,9 @@
+"use client"
+
 import React from 'react'
 import { Navbar } from '../_components/navbar';
 import { Footer } from '../_components/footer';
+import { sendMail } from '@/lib/email-config';
 
 const budgets = [
     {
@@ -30,6 +33,17 @@ const budgets = [
 ]
 
 const Contact = () => {
+
+    const sendForm = (e:React.FormEvent<HTMLFormElement>) => {
+        const formData = new FormData(e.currentTarget);
+        sendMail({
+            email: "info@softhoare.com",
+            sendTo: "admin@softhoare.com",
+            subject: "Page contact",
+            text: "Le contenu du mail"
+        })
+    }
+
   return (
     <div className='min-h-screen bg-slate-800'>
         <Navbar variant='dark' />
@@ -89,17 +103,17 @@ const Contact = () => {
                     <div className="md:col-span-2 bg-slate-800 p-8 rounded-xl text-white">
                         {/* <p className="text-lg mb-6">Write us a few words about your project and we'll prepare a proposal for you within 24 hours.</p> */}
                         
-                        <form>
+                        <form onSubmit={sendForm}>
                             <div className="mt-6 grid gap-4">
                                 {/* Grid */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-firstname-hire-us-1" className="block mb-2 text-sm text-white font-medium">Nom</label>
+                                        <label htmlFor="nom" className="block mb-2 text-sm text-white font-medium">Nom</label>
                                         <input type="text" required placeholder='ex: KAWEJ' name="nom" id="hs-firstname-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="hs-lastname-hire-us-1" className="block mb-2 text-sm text-white font-medium">Prénom</label>
+                                        <label htmlFor="prenom" className="block mb-2 text-sm text-white font-medium">Prénom</label>
                                         <input type="text" required placeholder='ex: Nathan' name="prenom" id="hs-lastname-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                 </div>
@@ -107,12 +121,12 @@ const Contact = () => {
 
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-white font-medium">Work Email</label>
-                                        <input type="email" required placeholder='ex: nathan.kawej@gmail.com' name="email" id="hs-work-email-hire-us-1" autoComplete="email" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
+                                        <label htmlFor="email" className="block mb-2 text-sm text-white font-medium">Email (optionnel)</label>
+                                        <input type="email" placeholder='ex: nathan.kawej@gmail.com' name="email" id="email" autoComplete="email" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                     <div>
-                                        <label htmlFor="hs-work-email-hire-us-1" className="block mb-2 text-sm text-white font-medium">Téléphone</label>
-                                        <input type="tel" required placeholder='ex: 099 452 4...' name="hs-work-email-hire-us-1" id="hs-work-email-hire-us-1" autoComplete='tel' className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
+                                        <label htmlFor="phone" className="block mb-2 text-sm text-white font-medium">Téléphone</label>
+                                        <input type="tel" required placeholder='ex: 099 452 4...' name="phone" id="phone" autoComplete='tel' className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
                                 </div>
 
@@ -120,13 +134,13 @@ const Contact = () => {
                                 {/* Grid */}
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                                     <div>
-                                        <label htmlFor="hs-company-hire-us-1" className="block mb-2 text-sm text-white font-medium">Nom entreprise</label>
-                                        <input type="text" placeholder='ex: Mc Donald' name="hs-company-hire-us-1" id="hs-company-hire-us-1" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
+                                        <label htmlFor="entreprise" className="block mb-2 text-sm text-white font-medium">Nom entreprise</label>
+                                        <input type="text" placeholder='ex: Mc Donald' name="entreprise" id="entreprise" className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none" />
                                     </div>
 
                                     <div>
-                                        <label htmlFor="hs-company-website-hire-us-1" className="block mb-2 text-sm text-white font-medium">Votre budget</label>
-                                        <select required className="py-2.5 px-4 pe-9 block border-2 w-full border-gray-200 rounded-lg text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none">
+                                        <label htmlFor="budget" className="block mb-2 text-sm text-white font-medium">Votre budget</label>
+                                        <select required name='budget' className="py-2.5 px-4 pe-9 block border-2 w-full border-gray-200 rounded-lg text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none">
                                             <option  className='text-black'>Chosissez un bugdet</option>
                                             {
                                                 budgets.map((item) => (<option value={item.id} key={item.id} className='text-black'>{item.title}</option>))
@@ -137,7 +151,7 @@ const Contact = () => {
                                 {/* End Grid */}
 
                                 <div>
-                                    <label htmlFor="hs-about-hire-us-1" className="block mb-2 text-sm text-white font-medium">Details</label>
+                                    <label htmlFor="hs-about-hire-us-1" className="block mb-2 text-sm text-white font-medium">Détails</label>
                                     <textarea id="hs-about-hire-us-1" placeholder='Parlez nous de votre projet...' name="hs-about-hire-us-1" rows={4} className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none"></textarea>
                                 </div>
 
