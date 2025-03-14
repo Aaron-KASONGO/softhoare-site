@@ -41,7 +41,7 @@ const Contact = () => {
                     Contact
                 </h3>
                 <h2 className="text-white font-semibold text-2xl md:text-4xl md:leading-tight">Contactez-nous</h2>
-                <p className="mt-1 text-gray-500">This profound insight guides our comprehensive strategy — from meticulous research and strategic planning to the seamless execution of brand development and website or product deployment.</p>
+                <p className="mt-1 text-gray-500">Vous avez une question ou un projet en tête ? N'attendez plus ! Remplissez notre formulaire en quelques clics et nous serons ravis de vous accompagner dans vos démarches.</p>
             </div>
 
             {/* <!-- Section Aide --> */}
@@ -63,8 +63,8 @@ const Contact = () => {
                 {/* <!-- Étapes --> */}
                 <div className="grid md:grid-cols-3 gap-8 mb-20">
                     <div className="pl-6">
-                        <h3 className="text-2xl text-slate-800 font-bold mb-4">What will be next step?</h3>
-                        <p className="text-gray-500 mb-6">You are one step closer to build your perfect product.</p>
+                        <h3 className="text-2xl text-slate-800 font-bold mb-4">Matérialisez vos idées !</h3>
+                        <p className="text-gray-500 mb-6">Remplissez le formulaire que voici <span className='md:hidden'> 👇</span><span className='hidden md:inline'> 👉</span></p>
                         
                         {/* <div className="space-y-8">
                             <div>
@@ -87,7 +87,7 @@ const Contact = () => {
 
                     {/* <!-- Formulaire --> */}
                     <div className="md:col-span-2 bg-slate-800 p-8 rounded-xl text-white">
-                        <p className="text-lg mb-6">Write us a few words about your project and we'll prepare a proposal for you within 24 hours.</p>
+                        {/* <p className="text-lg mb-6">Write us a few words about your project and we'll prepare a proposal for you within 24 hours.</p> */}
                         
                         <form>
                             <div className="mt-6 grid gap-4">
