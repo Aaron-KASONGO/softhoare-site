@@ -4,6 +4,7 @@ import React from 'react'
 import { Navbar } from '../_components/navbar';
 import { Footer } from '../_components/footer';
 import { sendMail } from '@/lib/email-config';
+import { contactEmailTemplate } from '@/lib/email_templates/contact';
 
 const budgets = [
     {
@@ -38,9 +39,10 @@ const Contact = () => {
         const formData = new FormData(e.currentTarget);
         sendMail({
             email: "info@softhoare.com",
-            sendTo: "admin@softhoare.com",
-            subject: "Page contact",
-            text: "Le contenu du mail"
+            sendTo: "info@softhoare.com",
+            subject: "Soumission de projet",
+            text: "Le contenu du mail",
+            html: contactEmailTemplate(formData.get('description') as string, formData.get('nom') as string, formData.get('phone') as string, formData.get('entreprise') as string, budgets.find((value) => String(value.id) === formData.get('budget') as string)?.title as string, formData.get('email') as string)
         })
     }
 
@@ -151,8 +153,8 @@ const Contact = () => {
                                 {/* End Grid */}
 
                                 <div>
-                                    <label htmlFor="hs-about-hire-us-1" className="block mb-2 text-sm text-white font-medium">Détails</label>
-                                    <textarea id="hs-about-hire-us-1" placeholder='Parlez nous de votre projet...' name="hs-about-hire-us-1" rows={4} className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none"></textarea>
+                                    <label htmlFor="description" className="block mb-2 text-sm text-white font-medium">Description du projet</label>
+                                    <textarea id="description" placeholder='Parlez-nous de votre projet...' name="description" rows={4} className="py-2.5 border-2 px-4 block w-full border-gray-200 rounded-lg sm:text-sm focus:border-slate-500 focus:ring-slate-500 disabled:opacity-50 disabled:pointer-events-none"></textarea>
                                 </div>
 
                                 <div className="mt-6 grid">
