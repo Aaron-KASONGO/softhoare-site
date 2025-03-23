@@ -15,7 +15,6 @@ const geistMono = Geist_Mono({
 export const metadata: Metadata = {
   title: "SoftHoare | Accueil",
   description: "L'agence de développement SoftHoare crée des solutions numériques sur-mesure pour répondre aux besoins spécifiques de votre entreprise. Nous allions innovation, expertise technique et design moderne pour vous aider à réussir sur internet (Lubumbahsi, logiciel, congo, rdc).",
-  robots: "index, follow",
   keywords: ["Agence", "Agence developpement", "developpement logiciel", "lubumbashi", "lubumbashi developpement", "devlopment", "web app", "mobile app", "software"],
   openGraph: {
     title: "SoftHoare | Accueil",
