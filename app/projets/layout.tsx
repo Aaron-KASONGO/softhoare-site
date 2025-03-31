@@ -4,7 +4,6 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
     title: "SoftHoare | Projets",
     description: "Découvrez nos réalisations, des projets innovants et sur mesure qui témoignent de notre expertise et de notre capacité à transformer vos idées en solutions concrètes et performantes.",
-    robots: "index, follow",
     keywords: ["Agence", "Agence developpement", "developpement logiciel", "lubumbashi", "lubumbashi developpement", "devlopment", "web app", "mobile app", "software"],
     openGraph: {
       title: "SoftHoare | Accueil",
