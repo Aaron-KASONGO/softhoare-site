@@ -4,9 +4,9 @@ export const WhyUs = () => {
   return (
     <>
         {/* Approach */}
-        <div className="bg-slate-800">
+        <div className="bg-slate-800 px-4 sm:px-6 lg:px-8">
         {/* Approach */}
-        <div className="container px-4 xl:px-0 py-10 lg:pt-20 lg:pb-20 mx-auto">
+        <div className="container py-10 lg:pt-20 lg:pb-20 mx-auto">
             {/* Title */}
             <div className="max-w-3xl mb-10 lg:mb-14">
                     <h3 className="text-teal-600 font-semibold">

@@ -33,7 +33,7 @@ export const Navbar: React.FC<{variant?: NavbarVariant}> = ({variant = "light"})
       <nav className={`fixed w-full z-50 transition-all duration-300 ${isScrolled ? 'bg-white shadow-lg': 'bg-transparent'}`}>
         <div className="relative items-center py-3 px-4 mx-auto container sm:px-8 md:flex md:space-x-6">
                 <div className="flex justify-between">
-                    <a href="javascript:void(0)">
+                    <a href="/">
                         <img
                             src={(isScrolled) ? "logos/logo_blue.png": variant === "light"? "logos/logo_blue.png": "logos/logo_blanc.png"}
                             width={50}
