@@ -14,7 +14,7 @@ export const Navbar: React.FC<{variant?: NavbarVariant}> = ({variant = "light"})
     const navigation = [
         { title: "Accueil", path: "/" },
         { title: "Projets", path: "/projets" },
-        { title: "Phylosophie", path: "/phylosophie" },
+        { title: "Philosophie", path: "/phylosophie" },
         { title: "Blog", path: "#" },
 
     ]

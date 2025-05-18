@@ -6,10 +6,10 @@ export const ContactProjet = () => {
     <>
     <div className='bg-gray-50 pb-8 px-4 sm:px-6 lg:px-8'>
         <div className='container mx-auto'>
-            <section className="bg-slate-800 rounded-2xl">
+            <section className="bg-slate-800 rounded-2xl text-white">
                 <div className="px-8 py-16 mx-auto lg:flex lg:items-center lg:justify-between">
                     <div className='space-y-8'>
-                        <h2 className="text-2xl font-semibold tracking-tight text-gray-800 xl:text-3xl dark:text-white">
+                        <h2 className="text-2xl font-semibold tracking-tight xl:text-3xl">
                             Parlons de la faisabilité de votre projet !
                         </h2>
                         <div className='grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8'>
